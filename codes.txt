@@ -1,0 +1,30 @@
+create table senangbowl;
+
+CREATE TABLE guest(g_id varchar(30),
+                   name varchar(30),
+                   email varchar(30),
+                   cell int(11),
+                   location varchar(50),
+                   gender varchar(30),
+                   PRIMARY KEY(g_id));
+
+CREATE TABLE guest_order(b_id varchar(30),
+                         g_id varchar(30),
+                         date date,
+                   		PRIMARY KEY(b_id),
+                        CONSTRAINT fk_guest_order foreign key(g_id) REFERENCES guest(g_id) ON UPDATE CASCADE ON DELETE CASCADE);
+                        
+
+CREATE TABLE r_kitchen(item_id varchar(30),
+                        b_id varchar(30),
+                        selling_price int,
+                   		PRIMARY KEY(item_id),
+                        CONSTRAINT fk_r_kitchen foreign key(b_id) REFERENCES guest_order(b_id) ON UPDATE CASCADE ON DELETE CASCADE);
+                        
+
+CREATE TABLE menu(item_id varchar(30),
+                    item_name varchar(30),
+                    item_type varchar(30),
+                   	PRIMARY KEY(item_id),
+                     CONSTRAINT fk_menu foreign key(item_id) REFERENCES r_kitchen(item_id) ON UPDATE CASCADE ON DELETE CASCADE);
+                        

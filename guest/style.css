@@ -1,0 +1,189 @@
+*
+{
+	margin:0;
+	padding:10;
+}
+
+header
+{
+	background-image:url("picture/w.jpg");
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+}
+
+ul
+{
+	float:right;
+	list-style-type:none;
+	margin-top:25px;
+}
+
+ul li
+{
+	display:inline-block;
+}
+
+ul li a,a,h1,
+{
+	text-decoration:none;
+	color:	white;	
+	padding:5px 20px;
+	transition:0.5s ease;
+}
+
+h2,p
+{
+	color:white;	
+}
+
+
+ul li a:hover
+{
+	background-color:#00b33c;
+}
+
+
+p a:hover
+{
+	background-color:#00b33c;
+}
+
+.active{
+	display:inline-block;
+	color:	#00b33c;	
+	padding:5px 20px;
+}
+
+.main
+{
+	color:white;
+	max-width:1200px;
+	margin:auto;
+	
+}
+
+.title
+{
+	position:absolute;
+	top:40%;
+	left:45%;
+	right:60%
+    font-size:60px;
+}
+
+
+.xn {	
+	position:absolute;
+	color:	 #e6e600;
+}
+.footer {
+	
+	position:absolute;
+	top:89%;
+	left:48%;
+	color:	 #e6e600;
+}
+
+ul .Head
+{
+	float:left;
+	padding-top:-25px;
+}
+
+
+.grid{
+  overflow: hidden;
+  background-color: transparent;
+   	
+	top:15%;
+	left:20%;
+	
+}
+.content {
+  background-color: #99e699;
+  padding: 60px;
+
+  
+  height: 200px; 
+  
+  
+  	position:absolute;
+	top:25%;
+	left:45%;
+	
+}
+
+.login-box{
+  width: 280px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  color: white;
+	top:45%;
+	left:25%;
+}
+
+.login-box h1,h2{
+  float: left;
+  font-size: 40px;
+  border-bottom: 4px solid #4caf50;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+
+div.gallery {
+  margin: 4px;
+  border: 2px solid black;
+  float: left;
+  width: 180px;
+  height: 180px;
+}
+
+
+div.gallery:hover {
+  transition:0.5s ease;
+  border: 3px solid #00cc00;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+.Sign-up{
+	color: #cccc00;
+  	position:absolute;
+	top:10%;
+	left:75%;
+}
+
+.contact{
+	position:absolute;
+	top:30%;
+	left:50%;
+	color:white;}
+	
+	
+.Touch{
+	position:absolute;
+	top:20%;
+	left:40%;
+	right:40%}
+
+	
+	
